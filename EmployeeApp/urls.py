@@ -7,7 +7,6 @@ urlpatterns = [
     path('add/',views.add_depData, name="add_department_data"),
     path('update/<int:pk>/',views.update_depData,name="update_department_data"),
     path('delete/<int:pk>/',views.delete_depData,name='delete_department_data'), 
-
     path('allemp/',views.viewOrAddEmployeeDetail,name='emp_data'),
     path('update/delete/<int:pk>/',views.updateOrDeleteEmployeeDetail,name="update_Employee_data"),
 ]

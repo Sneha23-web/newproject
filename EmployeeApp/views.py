@@ -66,7 +66,7 @@ def update_depData(request, pk):
     else:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
-#delete data which we have added using POST api
+#delete data which we have added using DELETE api
 @api_view(['DELETE'])
 def delete_depData(request,pk):
     item = get_object_or_404(Departments, pk=pk)
